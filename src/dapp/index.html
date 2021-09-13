@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20"></div>
+
+        <div class="section">
+            <div>
+                <h2>Airline Registration</h3>
+                <div class="row top-20">
+                    <label class="form">Airline</label> 
+                    <input type="text" id="airline-name"> 
+                    <btn class="btn btn-primary" id="register-airline">Register Airline</btn>
+                    <btn class="btn btn-primary" id="fund-airline">Fund Airline</btn>
+                </div>
+            </div>
+            <div id="airline-list">
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h2>Flight Registration</h3>
+                <div class="row top-20">
+                    <label class="form">Flight</label> 
+                    <input type="text" id="flight-number">
+                    <btn class="btn btn-primary" id="register-flight">Register Flight</btn>
+                </div>
+            </div>
+            <div class="flights" id="flight-list">
+                <select id="flight-select">
+                </select>
+            </div>
+            <div>
+                <input type="text" id="amount" placeholder="insert insurance here">
+                <btn class="btn btn-primary" id="buy-insurance">Buy Insurance</btn>
+                <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div>
+                <h2>Passenger Insurance</h3>
+                <div class="row top-20">
+                    <div id="insurance-bought">
+                        <p id="insurance-bought-text"></p>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="insurance-payout">
+                        <p id="insurance-payout-text"></p>
+                    </div>
+                </div>
+                <div class="row top-20">
+                    <btn class="btn btn-primary" id="claim-insurance">Claim Insurance</btn>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
